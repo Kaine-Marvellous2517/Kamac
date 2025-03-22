@@ -5,7 +5,7 @@ body {
 }
 @font-face {
   font-family: GrandHotel;
-  src: url('font/GrandHotel-Regular.ttf');
+  src: url('GrandHotel-Regular.ttf');
 }
 
 /*Styles for the page header*/
