@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 80px 0 0 0;
+    margin: 0;
+}
+@font-face {
+  font-family: GrandHotel;
+  src: url('font/GrandHotel-Regular.ttf');
+}
+
+/*Styles for the page header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #002EFF/*#0036FFEE*/;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+  padding: 24px;
+}
+.hamburger-menu {
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+}
+.kamac-logo {
+  font-family: GrandHotel;
+  font-size: 32px;
+  color: white;
+}
+
+/*Styles for the page aside*/
+.aside {
+  width: 140px;
+  background-color: white;
+  border-top: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  color: black;
+  border-radius: 8px 0 0 8px;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 120px;
+  right: 0;
+  z-index: 50;
+  padding: 0;
+  animation: slidein 1s ease-out;
+}
+@keyframes slidein {
+  from{ transform: translateX(140px)}
+  to{ transform: translateX(0)}
+}
+.aside div { 
+  padding: 12px 0 12px 20px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+
+
+/*Styles for the main tage*/
+.title-container {
+  padding: 80px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+.title-container .wel {
+  font-size: 40px;
+  font-weight: bold;
+  color: black/*#1080FF*/;
+  margin-bottom: 8px;
+}
+.kamac {
+  font-family: GrandHotel;
+  font-size: 52px;
+  font-weight: normal;
+}
+.title-container div {
+  color: black;
+  font-size: 16px;
+}
+.hire-btn {
+  width: 200px;
+  border-radius: 28px;
+  text-decoration: none;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.hire-btn:active {
+  background-color: white;
+  color: black;
+  border: 1px solod black;
+}
+
+.value-container {
+  padding: 40px 8%;
+  background-color: #00FFAD;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.txt-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.value-container .txt-div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 200;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #FFFFF0;
+  width: 200px;
+}
+.num-float {
+  float: left;
+  background-color: black;
+  color: white;
+  padding: 4px;
+  border-radius: 12px;
+}
+.value-container .hd {
+  font-size: 20px;
+  font-weight: bold;
+  color: navy/*#BCD61C*/;
+  margin-bottom: 40px;
+}
+.value-container .txt {
+  color: black;
+  font-size: 16px;
+}
+
+
+.rating-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 8%;
+}
+.rating {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rating div {
+  cursor: pointer;
+  margin: 0 8px 0 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.4s;
+}
+.rating div:active {
+  background-color: gray;
+}
+.rating div span {
+  position: absolute;
+  z-index: 4;
+  margin: -12px 0 0 -4px;
+}
+.comment textarea {
+  padding: 12px;
+  width: 50%;
+  height: 40px;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+/*Styles for the page footer*/
+.page-footer {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 12px;
+  border-top: 1px solid gray;
+  /* box-shadow: 0 0 8px lightgray; */
+}
+
+@media screen and (min-width: 500px) {
+  .title-container .wel {
+    font-size: 48px;
+  }
+  .kamac {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .title-container .wel {
+    font-size: 60px;
+  }
+  .kamac {
+    font-size: 72px;
+  }
+}
